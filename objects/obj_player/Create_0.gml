@@ -10,9 +10,14 @@ face = DOWN;
 //dash
 max_dash = 1;
 dash_dispo = max_dash;
-cd_dash = room_speed
+if(max_dash < 3){
+	cd_dash = room_speed
+}else{
+	cd_dash = room_speed*(max_dash/2)
+}
 can_dash = true;
 can_attack = true;
+dash_on = false;
 stock_dash = 0;
 
 //coup

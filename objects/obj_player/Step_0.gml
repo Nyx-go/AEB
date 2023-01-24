@@ -4,7 +4,7 @@ var up_key = keyboard_check(global.up);
 var left_key = keyboard_check(global.left);
 var down_key = keyboard_check(global.down);
 var attack_key = mouse_check_button_pressed(global.attack);
-var dash = keyboard_check(global.dash);
+var dash = keyboard_check_pressed(global.dash);
 
 //get xspd et yspd
 var xspd = (right_key - left_key) * move_speed_player;
@@ -56,7 +56,7 @@ if(dash && dash_dispo > 0){
 	}
 	
 	dash_dispo --;
-	alarm_set(0, cd_dash);
+	alarm[0] = cd_dash
 }
 
 	

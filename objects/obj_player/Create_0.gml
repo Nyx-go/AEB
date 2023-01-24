@@ -10,8 +10,11 @@ face = DOWN;
 max_dash = 1;
 dash_dispo = max_dash;
 cd_dash = room_speed
+can_dash = true;
+can_attack = true;
+stock_dash = 0;
 
 max_shield = 100;
 shield_dispo = max_shield;
-cd_shield = max_shield - shield_dispo;
 overshield = false;
+shield_on = false;

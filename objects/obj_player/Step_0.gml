@@ -35,12 +35,12 @@ if xspd == 0 && yspd == 0{
 depth = -bbox_bottom
 
 //coup d'épée
-if(attack_key){
+if(attack_key && can_attack){
 	instance_create_depth(x+36, y, -9999, obj_coup_epee)
 }
 
 //dash
-if(dash_key && dash_dispo > 0){
+if(dash_key && dash_dispo > 0 && can_dash){
 	switch(face){
 		
 		case RIGHT:
@@ -66,13 +66,30 @@ if(dash_key && dash_dispo > 0){
 if(shield_key && !overshield){
 	
 	shield_dispo--;
-	cd_shield = max_shield - shield_dispo;
+	can_dash = false;
+	can_attack = false;
+	shield_on = true;
+	stock_dash = dash_dispo;
+	
+	move_speed_player = 3;
 	
 	if(shield_dispo == 0){
-		overshield = true
+		overshield = true;
+	}
+	
+}else if(!shield_key && !can_dash){
+	can_dash = true;
+	can_attack = true;
+	shield_on = false;
+	move_speed_player = const_speed_player;
+	
+	if(stock_dash + dash_dispo <= max_dash){
+		dash_dispo += stock_dash;
+		stock_dash = 0;
 	}
 }
-if(cd_shield > 0 && alarm_get(2) == -1 && !shield_key){
+
+if(shield_dispo != max_shield && alarm_get(2) == -1 && !shield_key){
 		alarm[2] = 3;
 }
 	

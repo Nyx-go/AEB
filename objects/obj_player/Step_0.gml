@@ -4,7 +4,8 @@ var up_key = keyboard_check(global.up);
 var left_key = keyboard_check(global.left);
 var down_key = keyboard_check(global.down);
 var attack_key = mouse_check_button_pressed(global.attack);
-var dash = keyboard_check_pressed(global.dash);
+var dash_key = keyboard_check_pressed(global.dash);
+var shield_key = mouse_check_button(global.shield);
 
 //get xspd et yspd
 var xspd = (right_key - left_key) * move_speed_player;
@@ -71,7 +72,7 @@ y += yspd;
 depth = -bbox_bottom
 
 //coup d'épée
-if(attack_key && coup > 0){
+if(attack_key && coup > 0 && can_attack){
 	switch(face){
 		
 		case RIGHT:
@@ -101,7 +102,7 @@ if(attack_key && coup > 0){
 }
 
 //dash
-if(dash && dash_dispo > 0){
+if(dash_key && dash_dispo > 0 && can_dash){
 	switch(face){
 		
 		case RIGHT:
@@ -121,6 +122,37 @@ if(dash && dash_dispo > 0){
 	
 	dash_dispo --;
 	alarm[0] = cd_dash
+}
+
+//shield
+if(shield_key && !overshield){
+	
+	shield_dispo--;
+	can_dash = false;
+	can_attack = false;
+	shield_on = true;
+	stock_dash = dash_dispo;
+	
+	move_speed_player = 3;
+	
+	if(shield_dispo == 0){
+		overshield = true;
+	}
+	
+}else if(!shield_key && !can_dash){
+	can_dash = true;
+	can_attack = true;
+	shield_on = false;
+	move_speed_player = const_speed_player;
+	
+	if(stock_dash + dash_dispo <= max_dash){
+		dash_dispo += stock_dash;
+		stock_dash = 0;
+	}
+}
+
+if(shield_dispo != max_shield && alarm_get(2) == -1 && !shield_key){
+		alarm[2] = 3;
 }
 
 	

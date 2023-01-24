@@ -45,7 +45,7 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "MenuSystem",
-    "path": "folders/MenuSystem.yy",
+    "name": "AEB",
+    "path": "AEB.yyp",
   },
 }

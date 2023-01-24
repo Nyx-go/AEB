@@ -190,7 +190,7 @@ if(shield_dispo != max_shield && alarm_get(2) == -1 && !shield_key){
 
 //mort
 if(global.health <= 0){
-	game_end();
+	room_goto(scene_GameOver);
 }
 
 

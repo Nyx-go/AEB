@@ -53,6 +53,15 @@ if accept_key {
 			//controls
 			case 0: menu_level=3; break;
 			//fullscreen
+			case 1:
+			if window_get_fullscreen(){
+					        window_set_fullscreen(false);
+					    }
+					    else
+					    {
+					        window_set_fullscreen(true);
+					    }
+					break;
 			//sound
 			//back
 		}

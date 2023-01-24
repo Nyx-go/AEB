@@ -4,6 +4,14 @@ down_key = keyboard_check_pressed(global.down);
 accept_key = keyboard_check_pressed(global.accept);
 back_key = keyboard_check_pressed(vk_escape);
 
+option[3,0] = "Up ("+ string(chr(global.up)) + ")";
+option[3,1] = "Down ("+ string(chr(global.down)) + ")";
+option[3,2] = "Left ("+ string(chr(global.left)) + ")";
+option[3,3] = "Right ("+ string(chr(global.right)) + ")";
+option[3,4] = "Dash ("+ string(chr(global.dash)) + ")";
+option[3,5] = "Accept ("+ string(chr(global.accept)) + ")";
+option[3,6] = "Back";
+
 //store num of options cur menu
 op_length = array_length(option[menu_level]);
 

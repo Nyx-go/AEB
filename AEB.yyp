@@ -76,10 +76,10 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"title_screen","path":"rooms/title_screen/title_screen.yy",},},
-    {"roomId":{"name":"scene_GameOver","path":"rooms/scene_GameOver/scene_GameOver.yy",},},
     {"roomId":{"name":"salle_boss1","path":"rooms/salle_boss1/salle_boss1.yy",},},
     {"roomId":{"name":"salle_boss2","path":"rooms/salle_boss2/salle_boss2.yy",},},
     {"roomId":{"name":"salle_boss3","path":"rooms/salle_boss3/salle_boss3.yy",},},
+    {"roomId":{"name":"scene_GameOver","path":"rooms/scene_GameOver/scene_GameOver.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Chemins d'accès","folderPath":"folders/Chemins d'accès.yy","order":4,},

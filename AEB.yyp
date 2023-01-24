@@ -15,7 +15,7 @@
     {"id":{"name":"spr_player_dash","path":"sprites/spr_player_dash/spr_player_dash.yy",},"order":6,},
     {"id":{"name":"spr_player_health_bar","path":"sprites/spr_player_health_bar/spr_player_health_bar.yy",},"order":5,},
     {"id":{"name":"obj_title_menu","path":"objects/obj_title_menu/obj_title_menu.yy",},"order":1,},
-    {"id":{"name":"spr_tempo_wqihoruhf","path":"sprites/spr_tempo_wqihoruhf/spr_tempo_wqihoruhf.yy",},"order":3,},
+    {"id":{"name":"spr_whiteBack","path":"sprites/spr_whiteBack/spr_whiteBack.yy",},"order":3,},
     {"id":{"name":"spr_player_attack_back","path":"sprites/spr_player_attack_back/spr_player_attack_back.yy",},"order":4,},
     {"id":{"name":"spr_player_run_front","path":"sprites/spr_player_run_front/spr_player_run_front.yy",},"order":6,},
     {"id":{"name":"f_arial","path":"fonts/f_arial/f_arial.yy",},"order":1,},

@@ -1,4 +1,4 @@
-boss_max_health = 100;
+boss_max_health = 200;
 boss_health = boss_max_health;
 
 face = LEFT;
@@ -11,7 +11,7 @@ cd_coup = room_speed/2;
 cd_av_coup = room_speed/2;
 can_attack = false;
 
-damage = 15;
+damage = 25;
 
 
 

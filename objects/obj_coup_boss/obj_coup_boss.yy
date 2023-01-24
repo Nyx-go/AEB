@@ -30,7 +30,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objets",
-    "path": "folders/Objets.yy",
+    "name": "tt_boss",
+    "path": "folders/Objets/tt_boss.yy",
   },
 }

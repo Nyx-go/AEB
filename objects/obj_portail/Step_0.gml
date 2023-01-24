@@ -2,6 +2,6 @@
 
 if(place_meeting(x,y,obj_player))
 {
-	game_end();
+	room_goto_next();
 	instance_destroy();
 }

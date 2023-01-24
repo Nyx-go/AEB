@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_boss",
+  "name": "obj_boss2",
   "spriteId": {
     "name": "boss_idle",
     "path": "sprites/boss_idle/boss_idle.yy",
@@ -33,7 +33,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "boss",
-    "path": "folders/Objets/tt_boss/boss.yy",
+    "name": "boss2",
+    "path": "folders/Objets/tt_boss/boss2.yy",
   },
 }

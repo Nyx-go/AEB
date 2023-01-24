@@ -28,7 +28,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objets",
-    "path": "folders/Objets.yy",
+    "name": "boss",
+    "path": "folders/Objets/tt_boss/boss.yy",
   },
 }

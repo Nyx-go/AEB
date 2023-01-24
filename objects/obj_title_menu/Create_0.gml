@@ -20,3 +20,9 @@ global.option[2,3] = "Back";
 
 //sous menu contrôles
 global.option[3,0] = "Up (";
+global.option[3,1] = "Down (";
+global.option[3,2] = "Left (";
+global.option[3,3] = "Right (";
+global.option[3,4] = "Dash (";
+global.option[3,5] = "Pary (";
+global.option[3,6] = "Attack/Pass dialog (";

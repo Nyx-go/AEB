@@ -4,7 +4,8 @@ var up_key = keyboard_check(global.up);
 var left_key = keyboard_check(global.left);
 var down_key = keyboard_check(global.down);
 var attack_key = mouse_check_button_pressed(global.attack);
-var dash = keyboard_check_pressed(global.dash);
+var dash_key = keyboard_check_pressed(global.dash);
+var shield_key = mouse_check_button(global.shield);
 
 //get xspd et yspd
 var xspd = (right_key - left_key) * move_speed_player;
@@ -37,7 +38,7 @@ if(attack_key){
 }
 
 //dash
-if(dash && dash_dispo > 0){
+if(dash_key && dash_dispo > 0){
 	switch(face){
 		
 		case RIGHT:
@@ -59,6 +60,19 @@ if(dash && dash_dispo > 0){
 	alarm[0] = cd_dash
 }
 
+//shield
+if(shield_key && !overshield){
+	
+	shield_dispo--;
+	cd_shield = max_shield - shield_dispo;
+	
+	if(shield_dispo == 0){
+		overshield = true
+	}
+}
+if(cd_shield > 0 && alarm_get(2) == -1 && !shield_key){
+		alarm[2] = 3;
+}
 	
 
 

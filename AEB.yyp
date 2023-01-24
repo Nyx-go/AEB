@@ -5,6 +5,7 @@
   "resources": [
     {"id":{"name":"obj_boss","path":"objects/obj_boss/obj_boss.yy",},"order":2,},
     {"id":{"name":"Sprite1","path":"sprites/Sprite1/Sprite1.yy",},"order":0,},
+    {"id":{"name":"obj_cd_shield","path":"objects/obj_cd_shield/obj_cd_shield.yy",},"order":4,},
     {"id":{"name":"obj_vie","path":"objects/obj_vie/obj_vie.yy",},"order":3,},
     {"id":{"name":"Sprite3","path":"sprites/Sprite3/Sprite3.yy",},"order":2,},
     {"id":{"name":"obj_coup_epee","path":"objects/obj_coup_epee/obj_coup_epee.yy",},"order":1,},

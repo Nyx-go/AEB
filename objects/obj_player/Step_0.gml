@@ -59,7 +59,6 @@ if(dash && dash_dispo > 0){
 	alarm_set(0, cd_dash);
 }
 
-if(alarm_get(0)){
 	
 
 

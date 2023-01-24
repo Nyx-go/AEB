@@ -26,6 +26,8 @@ y += yspd;
 
 //animate
 if xspd == 0 && yspd == 0{
+	sprite_index = spr_Player_idle;
+}else{
 	image_index = 0;
 }
 

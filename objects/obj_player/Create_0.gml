@@ -15,6 +15,7 @@ if(max_dash < 3){
 }else{
 	cd_dash = room_speed*(max_dash/2)
 }
+
 can_dash = true;
 can_attack = true;
 dash_on = false;

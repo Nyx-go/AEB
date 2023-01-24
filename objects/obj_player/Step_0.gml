@@ -7,9 +7,11 @@ var attack_key = mouse_check_button_pressed(global.attack);
 var dash_key = keyboard_check_pressed(global.dash);
 var shield_key = mouse_check_button(global.shield);
 
+mask_index = spr_player_idle_front
+
 //get xspd et yspd
-var xspd = (right_key - left_key) * move_speed_player;
-var yspd = (down_key - up_key) * move_speed_player;
+xspd = (right_key - left_key) * move_speed_player;
+yspd = (down_key - up_key) * move_speed_player;
 
 //direction
 if yspd == 0{
@@ -65,6 +67,14 @@ if(coup == 1){
 	}
 }
 
+//collisions
+if place_meeting(x+xspd, y, obj_col_block){
+	xspd = 0;
+}
+if place_meeting(x, y+yspd, obj_col_block){
+	yspd = 0;
+}
+
 //move the player
 x += xspd;
 y += yspd;
@@ -106,16 +116,33 @@ if(dash_key && dash_dispo > 0 && can_dash){
 	switch(face){
 		
 		case RIGHT:
-			x += dash_player;
+			if (!place_meeting(x+dash_player, y, obj_col_block)){
+				x += dash_player;
+			}else{
+				x = 1350;
+			}
 			break;
 		case DOWN:
-			y += dash_player;
+			if (!place_meeting(x, y+dash_player, obj_col_block)){
+				y += dash_player;
+			}else{
+				y = 848;
+			}
 			break;
 		case LEFT:
-			x -= dash_player;
+			if (!place_meeting(x-dash_player, y, obj_col_block)){
+				x -= dash_player;
+			}else{
+				x = 18;
+			}
 			break;
 		case UP:
-			y -= dash_player;
+		
+		if(!place_meeting(x, y-dash_player, obj_col_block)){
+				y -= dash_player;
+			}else{
+				y = 128;
+			}
 			break;
 			
 	}

@@ -4,6 +4,7 @@
   "name": "AEB",
   "resources": [
     {"id":{"name":"titre","path":"sprites/titre/titre.yy",},"order":4,},
+    {"id":{"name":"salle_boss3","path":"rooms/salle_boss3/salle_boss3.yy",},"order":3,},
     {"id":{"name":"spr_player_idle_front","path":"sprites/spr_player_idle_front/spr_player_idle_front.yy",},"order":0,},
     {"id":{"name":"spr_col_block","path":"sprites/spr_col_block/spr_col_block.yy",},"order":9,},
     {"id":{"name":"obj_col_block","path":"objects/obj_col_block/obj_col_block.yy",},"order":0,},
@@ -14,6 +15,7 @@
     {"id":{"name":"spr_menuback","path":"sprites/spr_menuback/spr_menuback.yy",},"order":2,},
     {"id":{"name":"obj_boss","path":"objects/obj_boss/obj_boss.yy",},"order":0,},
     {"id":{"name":"spr_player_dash","path":"sprites/spr_player_dash/spr_player_dash.yy",},"order":6,},
+    {"id":{"name":"salle_boss2","path":"rooms/salle_boss2/salle_boss2.yy",},"order":2,},
     {"id":{"name":"spr_player_health_bar","path":"sprites/spr_player_health_bar/spr_player_health_bar.yy",},"order":5,},
     {"id":{"name":"obj_title_menu","path":"objects/obj_title_menu/obj_title_menu.yy",},"order":1,},
     {"id":{"name":"spr_whiteBack","path":"sprites/spr_whiteBack/spr_whiteBack.yy",},"order":3,},
@@ -67,6 +69,8 @@
     {"roomId":{"name":"scene_GameOver","path":"rooms/scene_GameOver/scene_GameOver.yy",},},
     {"roomId":{"name":"title_screen","path":"rooms/title_screen/title_screen.yy",},},
     {"roomId":{"name":"salle_boss1","path":"rooms/salle_boss1/salle_boss1.yy",},},
+    {"roomId":{"name":"salle_boss2","path":"rooms/salle_boss2/salle_boss2.yy",},},
+    {"roomId":{"name":"salle_boss3","path":"rooms/salle_boss3/salle_boss3.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Chemins d'accès","folderPath":"folders/Chemins d'accès.yy","order":4,},

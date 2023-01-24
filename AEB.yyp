@@ -51,6 +51,8 @@
     {"id":{"name":"salle_boss1","path":"rooms/salle_boss1/salle_boss1.yy",},"order":0,},
   ],
   "Options": [
+    {"name":"Linux","path":"options/linux/options_linux.yy",},
+    {"name":"macOS","path":"options/mac/options_mac.yy",},
     {"name":"Windows","path":"options/windows/options_windows.yy",},
     {"name":"operagx","path":"options/operagx/options_operagx.yy",},
     {"name":"Main","path":"options/main/options_main.yy",},
@@ -62,9 +64,9 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"scene_GameOver","path":"rooms/scene_GameOver/scene_GameOver.yy",},},
     {"roomId":{"name":"title_screen","path":"rooms/title_screen/title_screen.yy",},},
     {"roomId":{"name":"salle_boss1","path":"rooms/salle_boss1/salle_boss1.yy",},},
-    {"roomId":{"name":"scene_GameOver","path":"rooms/scene_GameOver/scene_GameOver.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Chemins d'accès","folderPath":"folders/Chemins d'accès.yy","order":4,},

@@ -7,6 +7,8 @@ for (var i = 0 ; i < array_length(option[menu_level]) ; i++ ) {
 width = _new_w + 2*op_border;
 height = op_border*2 + (string_height(option[0,0]) + 1) + (op_length-1)*op_space;
 
+draw_set_font(f_arial_big);
+
 //draw menu background
 draw_sprite_ext(sprite_index , image_index , x+width/2 , y+height/2 , width/sprite_width , height/sprite_height , 0 , c_white , 1);
 

@@ -4,6 +4,14 @@ down_key = keyboard_check_pressed(global.down);
 accept_key = keyboard_check_pressed(global.accept);
 back_key = keyboard_check_pressed(vk_escape);
 
+option[3,0] = "Up ("+ string(chr(global.up)) + ")";
+option[3,1] = "Down ("+ string(chr(global.down)) + ")";
+option[3,2] = "Left ("+ string(chr(global.left)) + ")";
+option[3,3] = "Right ("+ string(chr(global.right)) + ")";
+option[3,4] = "Dash ("+ string(chr(global.dash)) + ")";
+option[3,5] = "Accept ("+ string(chr(global.accept)) + ")";
+option[3,6] = "Back";
+
 //store num of options cur menu
 op_length = array_length(option[menu_level]);
 
@@ -44,13 +52,74 @@ if accept_key {
 		switch(pos){
 			//controls
 			case 0: menu_level=3; break;
+			//fullscreen
+			case 1:
+			if window_get_fullscreen(){
+					        window_set_fullscreen(false);
+					    }
+					    else
+					    {
+					        window_set_fullscreen(true);
+					    }
+					break;
+			//sound
+			//back
 		}
 		break;
 		
 		case 3:
-		switch(pos){
-			//back
-			case 6: menu_level=2 ; break;
+			switch(pos){
+				//up
+				case 0:
+					accept = true;
+					var inp = instance_create_depth(0,0,0,obj_input);
+					inp.pos = pos
+					inp.input = "up"
+					break;
+					
+				//down
+				case 1:
+					accept = true;
+					var inp = instance_create_depth(0,0,0,obj_input);
+					inp.pos = pos
+					inp.input = "down"
+					break;
+				
+				//left
+				case 2:
+					accept = true;
+					var inp = instance_create_depth(0,0,0,obj_input);
+					inp.pos = pos
+					inp.input = "left"
+					break;	
+				
+				//right
+				case 3:
+					accept = true;
+					var inp = instance_create_depth(0,0,0,obj_input);
+					inp.pos = pos
+					inp.input = "right"
+					break;
+					
+				//dash
+				case 4:
+					accept = true;
+					var inp = instance_create_depth(0,0,0,obj_input);
+					inp.pos = pos
+					inp.input = "dash"
+					break;
+					
+				//accept
+				case 5:
+					accept = true;
+					var inp = instance_create_depth(0,0,0,obj_input);
+					inp.pos = pos
+					inp.input = "accept"
+					break;
+			
+			
+				//back
+				case 6: menu_level=2 ; break;
 		}
 		break;
 

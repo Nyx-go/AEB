@@ -1,5 +1,5 @@
 op_border = 8 ;
-op_space = 16 ;
+op_space = 24 ;
 
 pos=0;
 

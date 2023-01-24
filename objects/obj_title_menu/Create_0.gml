@@ -32,6 +32,3 @@ option[3,6] = "Back";
 
 op_length = 0;
 menu_level = 0;
-
-
-audio_play_sound(Music_Menu , 1000 , true);

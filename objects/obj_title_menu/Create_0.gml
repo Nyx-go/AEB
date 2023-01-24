@@ -1,5 +1,3 @@
-width = 256;
-height = 640;
 
 op_border = 8 ;
 op_space = 16 ;
@@ -24,12 +22,12 @@ option[2,2] = "Sound";
 option[2,3] = "Back";
 
 //sous menu contrôles
-option[3,0] = "Up (";
-option[3,1] = "Down (";
-option[3,2] = "Left (";
-option[3,3] = "Right (";
-option[3,4] = "Dash (";
-option[3,5] = "Enter (";
+option[3,0] = "Up ("+ string(chr(global.up)) + ")";
+option[3,1] = "Down ("+ string(chr(global.down)) + ")";
+option[3,2] = "Left ("+ string(chr(global.left)) + ")";
+option[3,3] = "Right ("+ string(chr(global.right)) + ")";
+option[3,4] = "Dash ("+ string(chr(global.dash)) + ")";
+option[3,5] = "Accept ("+ string(chr(global.accept)) + ")";
 option[3,6] = "Back";
 
 op_length = 0;

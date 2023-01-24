@@ -1,3 +1,12 @@
+//dynamic height
+var _new_w = 0;
+for (var i = 0 ; i < array_length(option[menu_level]) ; i++ ) {
+	var _op_w = string_width(option[menu_level , i]);
+	_new_w = max (_new_w , _op_w) ;
+}
+width = _new_w + 2*op_border;
+height = op_border*2 + (string_height(option[0,0]) + 1) + (op_length-1)*op_space;
+
 //draw menu background
 draw_sprite_ext(sprite_index , image_index , x , y , width/sprite_width , height/sprite_height , 0 , c_white , 1);
 

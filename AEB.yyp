@@ -30,6 +30,7 @@
     {"id":{"name":"Sprite1","path":"sprites/Sprite1/Sprite1.yy",},"order":0,},
     {"id":{"name":"spr_background_boss1","path":"sprites/spr_background_boss1/spr_background_boss1.yy",},"order":7,},
     {"id":{"name":"spr_player_attack_front","path":"sprites/spr_player_attack_front/spr_player_attack_front.yy",},"order":5,},
+    {"id":{"name":"Music_Menu","path":"sounds/Music_Menu/Music_Menu.yy",},"order":0,},
     {"id":{"name":"spr_player_attack","path":"sprites/spr_player_attack/spr_player_attack.yy",},"order":1,},
     {"id":{"name":"obj_player_overlay","path":"objects/obj_player_overlay/obj_player_overlay.yy",},"order":2,},
     {"id":{"name":"Sprite3","path":"sprites/Sprite3/Sprite3.yy",},"order":2,},

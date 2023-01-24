@@ -9,7 +9,6 @@ global.down = vk_down;
 global.left = vk_left;
 global.attack = mb_left;
 global.dash = vk_control;
-global.shield = mb_right;
 
 global.max_health = 100;
 global.health = global.max_health;

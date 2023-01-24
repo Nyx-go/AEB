@@ -68,10 +68,10 @@ if(coup == 1){
 }
 
 //collisions
-if (place_meeting(x+xspd, y, obj_col_block) || place_meeting(x+xspd, y, obj_boss) ){
+if place_meeting(x+xspd, y, obj_col_block){
 	xspd = 0;
 }
-if (place_meeting(x, y+yspd, obj_col_block) || place_meeting(x, y+yspd, obj_boss)){
+if place_meeting(x, y+yspd, obj_col_block){
 	yspd = 0;
 }
 

@@ -15,6 +15,7 @@
     {"id":{"name":"spr_menuback","path":"sprites/spr_menuback/spr_menuback.yy",},"order":2,},
     {"id":{"name":"obj_boss","path":"objects/obj_boss/obj_boss.yy",},"order":0,},
     {"id":{"name":"spr_player_dash","path":"sprites/spr_player_dash/spr_player_dash.yy",},"order":6,},
+    {"id":{"name":"obj_input","path":"objects/obj_input/obj_input.yy",},"order":1,},
     {"id":{"name":"salle_boss2","path":"rooms/salle_boss2/salle_boss2.yy",},"order":2,},
     {"id":{"name":"spr_player_health_bar","path":"sprites/spr_player_health_bar/spr_player_health_bar.yy",},"order":5,},
     {"id":{"name":"obj_title_menu","path":"objects/obj_title_menu/obj_title_menu.yy",},"order":1,},
@@ -66,8 +67,8 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"scene_GameOver","path":"rooms/scene_GameOver/scene_GameOver.yy",},},
     {"roomId":{"name":"title_screen","path":"rooms/title_screen/title_screen.yy",},},
+    {"roomId":{"name":"scene_GameOver","path":"rooms/scene_GameOver/scene_GameOver.yy",},},
     {"roomId":{"name":"salle_boss1","path":"rooms/salle_boss1/salle_boss1.yy",},},
     {"roomId":{"name":"salle_boss2","path":"rooms/salle_boss2/salle_boss2.yy",},},
     {"roomId":{"name":"salle_boss3","path":"rooms/salle_boss3/salle_boss3.yy",},},

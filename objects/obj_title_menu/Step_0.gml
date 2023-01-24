@@ -44,13 +44,65 @@ if accept_key {
 		switch(pos){
 			//controls
 			case 0: menu_level=3; break;
+			//fullscreen
+			//sound
+			//back
 		}
 		break;
 		
 		case 3:
-		switch(pos){
-			//back
-			case 6: menu_level=2 ; break;
+			switch(pos){
+				//up
+				case 0:
+					accept = true;
+					var inp = instance_create_depth(0,0,0,obj_input);
+					inp.pos = pos
+					inp.input = "up"
+					break;
+					
+				//down
+				case 1:
+					accept = true;
+					var inp = instance_create_depth(0,0,0,obj_input);
+					inp.pos = pos
+					inp.input = "down"
+					break;
+				
+				//left
+				case 2:
+					accept = true;
+					var inp = instance_create_depth(0,0,0,obj_input);
+					inp.pos = pos
+					inp.input = "left"
+					break;	
+				
+				//right
+				case 3:
+					accept = true;
+					var inp = instance_create_depth(0,0,0,obj_input);
+					inp.pos = pos
+					inp.input = "right"
+					break;
+					
+				//dash
+				case 4:
+					accept = true;
+					var inp = instance_create_depth(0,0,0,obj_input);
+					inp.pos = pos
+					inp.input = "dash"
+					break;
+					
+				//accept
+				case 5:
+					accept = true;
+					var inp = instance_create_depth(0,0,0,obj_input);
+					inp.pos = pos
+					inp.input = "accept"
+					break;
+			
+			
+				//back
+				case 6: menu_level=2 ; break;
 		}
 		break;
 

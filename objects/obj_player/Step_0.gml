@@ -126,7 +126,9 @@ if(dash_key && dash_dispo > 0 && can_dash){
 
 //shield
 if(shield_key && !overshield){
-	
+	if(!instance_exists(shield)){
+		instance_create_depth(x,y,0,shield);
+	}
 	shield_dispo--;
 	can_dash = false;
 	can_attack = false;
@@ -136,10 +138,12 @@ if(shield_key && !overshield){
 	move_speed_player = 3;
 	
 	if(shield_dispo == 0){
+		instance_destroy(shield);
 		overshield = true;
 	}
 	
 }else if(!shield_key && !can_dash){
+	instance_destroy(shield);
 	can_dash = true;
 	can_attack = true;
 	shield_on = false;

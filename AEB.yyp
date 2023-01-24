@@ -4,6 +4,7 @@
   "name": "AEB",
   "resources": [
     {"id":{"name":"spr_player_idle_front","path":"sprites/spr_player_idle_front/spr_player_idle_front.yy",},"order":0,},
+    {"id":{"name":"Sprite14","path":"sprites/Sprite14/Sprite14.yy",},"order":5,},
     {"id":{"name":"spr_player_idle_back","path":"sprites/spr_player_idle_back/spr_player_idle_back.yy",},"order":2,},
     {"id":{"name":"obj_boss","path":"objects/obj_boss/obj_boss.yy",},"order":2,},
     {"id":{"name":"spr_player_dash","path":"sprites/spr_player_dash/spr_player_dash.yy",},"order":6,},
@@ -14,6 +15,7 @@
     {"id":{"name":"spr_player_run_back","path":"sprites/spr_player_run_back/spr_player_run_back.yy",},"order":7,},
     {"id":{"name":"spr_player_idle","path":"sprites/spr_player_idle/spr_player_idle.yy",},"order":3,},
     {"id":{"name":"Sprite6","path":"sprites/Sprite6/Sprite6.yy",},"order":1,},
+    {"id":{"name":"shield","path":"objects/shield/shield.yy",},"order":4,},
     {"id":{"name":"Sprite1","path":"sprites/Sprite1/Sprite1.yy",},"order":0,},
     {"id":{"name":"spr_player_attack_front","path":"sprites/spr_player_attack_front/spr_player_attack_front.yy",},"order":5,},
     {"id":{"name":"spr_player_attack","path":"sprites/spr_player_attack/spr_player_attack.yy",},"order":1,},
@@ -65,6 +67,6 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2022.11.1.56",
+    "IDEVersion": "2022.9.1.51",
   },
 }

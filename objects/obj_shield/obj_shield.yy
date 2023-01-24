@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "shield",
+  "name": "obj_shield",
   "spriteId": {
     "name": "spr_shield",
     "path": "sprites/spr_shield/spr_shield.yy",

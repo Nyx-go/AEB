@@ -27,7 +27,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "AEB",
-    "path": "AEB.yyp",
+    "name": "MenuSystem",
+    "path": "folders/MenuSystem.yy",
   },
 }

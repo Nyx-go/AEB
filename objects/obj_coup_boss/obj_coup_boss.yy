@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_coup_boss",
   "spriteId": {
-    "name": "spr_attack_epee",
-    "path": "sprites/spr_attack_epee/spr_attack_epee.yy",
+    "name": "spr_attack_baton",
+    "path": "sprites/spr_attack_baton/spr_attack_baton.yy",
   },
   "solid": false,
   "visible": false,

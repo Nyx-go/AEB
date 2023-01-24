@@ -12,6 +12,8 @@ global.dash = vk_control;
 global.shield = mb_right;
 global.accept = vk_enter;
 
+global.stock_input = [global.up, global.right, global.down, global.left, global.dash , global.accept];
+
 global.max_health = 100;
 global.health = global.max_health;
 

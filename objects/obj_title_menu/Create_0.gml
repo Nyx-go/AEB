@@ -1,17 +1,17 @@
 op_border = 8 ;
-op_space = 16 ;
+op_space = 24 ;
 
 pos=0;
 
 //menu principal
 option[0,0] = "Play";
-option[0,1] = "Tuto";
+option[0,1] = "Tuto (not implemented)";
 option[0,2] = "Settings";
 option[0,3] = "Quit game";
 
 //sous menu play
 option[1,0] = "Start";
-option[1,1] = "Soon";
+option[1,1] = "Saves (not implemented)";
 option[1,2] = "Back";
 
 //sous menu settings
@@ -31,3 +31,4 @@ option[3,6] = "Back";
 
 op_length = 0;
 menu_level = 0;
+accept=false;

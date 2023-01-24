@@ -38,48 +38,27 @@ if(coup > 0){
 }
 
 if(coup == 1){
-	if xspd == 0 && yspd == 0{
-		switch(face){
+	switch(face){
 		case RIGHT:
-			sprite_index = spr_player_idle;
+			sprite_index = spr_boss_run;
 			image_xscale = 1;
 			break;
 		case DOWN:
-			sprite_index = spr_player_idle_front;
+			sprite_index = spr_boss_run_front;
 			image_xscale = 1;
 			break;
 		case LEFT:
-			sprite_index = spr_player_idle;
+			sprite_index = spr_boss_run;
 			image_xscale = -1;
 			break;
 		case UP:
-			sprite_index = spr_player_idle_back;
+			sprite_index = spr_boss_run_back;
 			image_xscale = 1;
 			break;
-		}	
-	}else{
-		switch(face){
-		case RIGHT:
-			sprite_index = spr_player_run;
-			image_xscale = 1;
-			break;
-		case DOWN:
-			sprite_index = spr_player_run_front;
-			image_xscale = 1;
-			break;
-		case LEFT:
-			sprite_index = spr_player_run;
-			image_xscale = -1;
-			break;
-		case UP:
-			sprite_index = spr_player_run_back;
-			image_xscale = 1;
-			break;
-		}
 	}
 }
 
-if(coup > 0 && ((-45<obj_player.x-x && obj_player.x-x<45) && (-45<obj_player.y-y && obj_player.y-y<45)) || can_attack){
+if(coup > 0 && ((-55<obj_player.x-x && obj_player.x-x<55) && (-85<obj_player.y-y && obj_player.y-y<95)) || can_attack){
 	if(!can_attack){
 		alarm[1] = cd_av_coup;
 	}
@@ -87,23 +66,23 @@ if(coup > 0 && ((-45<obj_player.x-x && obj_player.x-x<45) && (-45<obj_player.y-y
 		
 		switch(face){
 			case RIGHT:
-				instance_create_depth(x+15, y-5, -9999, obj_coup_boss)
-				sprite_index = spr_player_attack;
+				instance_create_depth(x+27, y, -9999, obj_coup_boss)
+				sprite_index = spr_boss_attack;
 				image_xscale = 1;
 				break;
 			case DOWN:
-				instance_create_depth(x, y-2, -9999, obj_coup_boss)
-				sprite_index = spr_player_attack_front;
+				instance_create_depth(x, y+32, -9999, obj_coup_boss)
+				sprite_index = spr_boss_attack_front;
 				image_xscale = 1;
 				break;
 			case LEFT:
-				instance_create_depth(x-15, y-5, -9999, obj_coup_boss)
-				sprite_index = spr_player_attack;
+				instance_create_depth(x-27, y, -9999, obj_coup_boss)
+				sprite_index = spr_boss_attack;
 				image_xscale = -1;
 				break;
 			case UP:
-				instance_create_depth(x, y-36, -9999, obj_coup_boss)
-				sprite_index = spr_player_attack_back;
+				instance_create_depth(x, y-30, -9999, obj_coup_boss)
+				sprite_index = spr_boss_attack_back;
 				image_xscale = 1;
 				break;
 			

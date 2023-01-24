@@ -24,3 +24,6 @@ max_shield = 100;
 shield_dispo = max_shield;
 overshield = false;
 shield_on = false;
+
+//overlay
+draw_health_ = 0;

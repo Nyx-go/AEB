@@ -155,8 +155,6 @@ if(shield_dispo != max_shield && alarm_get(2) == -1 && !shield_key){
 		alarm[2] = 3;
 }
 
-	
-
 
 
 

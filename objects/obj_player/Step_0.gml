@@ -86,22 +86,22 @@ if(attack_key && coup > 0 && can_attack){
 	switch(face){
 		
 		case RIGHT:
-			instance_create_depth(x+36, y, -9999, obj_coup_epee)
+			instance_create_depth(x+6, y-5, -9999, obj_coup_epee)
 			sprite_index = spr_player_attack;
 			image_xscale = 1;
 			break;
 		case DOWN:
-			instance_create_depth(x, y+36, -9999, obj_coup_epee)
+			instance_create_depth(x-2, y, -9999, obj_coup_epee)
 			sprite_index = spr_player_attack_front;
 			image_xscale = 1;
 			break;
 		case LEFT:
-			instance_create_depth(x-36, y, -9999, obj_coup_epee)
+			instance_create_depth(x-6, y-5, -9999, obj_coup_epee)
 			sprite_index = spr_player_attack;
 			image_xscale = -1;
 			break;
 		case UP:
-			instance_create_depth(x, y-36, -9999, obj_coup_epee)
+			instance_create_depth(x-2, y-10, -9999, obj_coup_epee)
 			sprite_index = spr_player_attack_back;
 			image_xscale = 1;
 			break;
@@ -113,6 +113,7 @@ if(attack_key && coup > 0 && can_attack){
 
 //dash
 if(dash_key && dash_dispo > 0 && can_dash){
+	dash_on = true;
 	switch(face){
 		
 		case RIGHT:
@@ -138,7 +139,7 @@ if(dash_key && dash_dispo > 0 && can_dash){
 			break;
 		case UP:
 		
-		if(!place_meeting(x, y-dash_player, obj_col_block)){
+			if(!place_meeting(x, y-dash_player, obj_col_block)){
 				y -= dash_player;
 			}else{
 				y = 128;
@@ -149,12 +150,13 @@ if(dash_key && dash_dispo > 0 && can_dash){
 	
 	dash_dispo --;
 	alarm[0] = cd_dash
+	dash_on = false;
 }
 
 //shield
 if(shield_key && !overshield){
-	if(!instance_exists(shield)){
-		instance_create_depth(x,y,0,shield);
+	if(!instance_exists(obj_shield)){
+		instance_create_depth(x,y,0,obj_shield);
 	}
 	shield_dispo--;
 	can_dash = false;
@@ -165,12 +167,12 @@ if(shield_key && !overshield){
 	move_speed_player = 3;
 	
 	if(shield_dispo == 0){
-		instance_destroy(shield);
+		instance_destroy(obj_shield);
 		overshield = true;
 	}
 	
 }else if(!shield_key && !can_dash){
-	instance_destroy(shield);
+	instance_destroy(obj_shield);
 	can_dash = true;
 	can_attack = true;
 	shield_on = false;
@@ -186,7 +188,10 @@ if(shield_dispo != max_shield && alarm_get(2) == -1 && !shield_key){
 		alarm[2] = 3;
 }
 
-
+//mort
+if(global.health <= 0){
+	game_end();
+}
 
 
 

@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "shield",
   "spriteId": {
-    "name": "Sprite14",
-    "path": "sprites/Sprite14/Sprite14.yy",
+    "name": "spr_shield",
+    "path": "sprites/spr_shield/spr_shield.yy",
   },
   "solid": false,
   "visible": true,

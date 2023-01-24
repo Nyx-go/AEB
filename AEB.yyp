@@ -19,6 +19,7 @@
     {"id":{"name":"spr_whiteBack","path":"sprites/spr_whiteBack/spr_whiteBack.yy",},"order":3,},
     {"id":{"name":"spr_player_attack_back","path":"sprites/spr_player_attack_back/spr_player_attack_back.yy",},"order":4,},
     {"id":{"name":"spr_player_run_front","path":"sprites/spr_player_run_front/spr_player_run_front.yy",},"order":6,},
+    {"id":{"name":"obj_menu_music","path":"objects/obj_menu_music/obj_menu_music.yy",},"order":6,},
     {"id":{"name":"Obj_GameOver","path":"objects/Obj_GameOver/Obj_GameOver.yy",},"order":0,},
     {"id":{"name":"f_arial","path":"fonts/f_arial/f_arial.yy",},"order":1,},
     {"id":{"name":"spr_player_run","path":"sprites/spr_player_run/spr_player_run.yy",},"order":8,},

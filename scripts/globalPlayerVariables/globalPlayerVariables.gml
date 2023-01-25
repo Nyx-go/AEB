@@ -17,7 +17,7 @@ global.stock_input = [global.up, global.right, global.down, global.left, global.
 global.max_health = 100;
 global.health = global.max_health;
 
-global.damage = 100;
+global.damage = 10;
 
 global.boss_stat = [70, 0, 0]
 global.boss_vaincu = 0;

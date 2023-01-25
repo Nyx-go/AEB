@@ -34,6 +34,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "MenuSystem",
-    "path": "folders/MenuRemonteLeTemps/MenuSystem.yy",
+    "path": "folders/MenuSystem.yy",
   },
 }

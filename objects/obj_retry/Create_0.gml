@@ -2,9 +2,9 @@ pos = 0;
 
 option[0][0] = spr_background_boss1_menu;
 option[1][0] = global.boss_stat[0][1]
-option[0][1] = spr_background_boss1_menu;
+option[0][1] = spr_background_boss2_menu;
 option[1][1] = global.boss_stat[1][1]
-option[0][2] = spr_background_boss1_menu;
+option[0][2] = spr_background_boss3_menu;
 option[1][2] = global.boss_stat[2][1]
 
 option_x = 200;

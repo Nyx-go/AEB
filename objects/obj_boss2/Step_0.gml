@@ -1,3 +1,5 @@
+
+
 if(boss_health <= 0){
 	boss_health = 0;
 	instance_create_depth(1266,484,0,obj_portail);
@@ -44,7 +46,7 @@ if(coup == 1){
 			image_xscale = 1;
 			break;
 		case DOWN:
-			sprite_index = spr_boss_run2_front;
+			sprite_index = spr_boss2_run_front;
 			image_xscale = 1;
 			break;
 		case LEFT:

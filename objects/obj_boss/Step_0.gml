@@ -63,7 +63,7 @@ if(coup > 0 && ((-55<obj_player.x-x && obj_player.x-x<55) && (-85<obj_player.y-y
 		alarm[1] = cd_av_coup;
 	}
 	else{
-		
+		audio_play_sound(sound_slash,10,false);
 		switch(face){
 			case RIGHT:
 				instance_create_depth(x+27, y, -9999, obj_coup_boss)

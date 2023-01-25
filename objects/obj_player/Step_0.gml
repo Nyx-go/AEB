@@ -27,6 +27,7 @@ if xspd == 0{
 //animate
 if(coup == 1){
 	if xspd == 0 && yspd == 0{
+		audio_stop_sound(sound_footsteps);
 		switch(face){
 		case RIGHT:
 			sprite_index = spr_player_idle;
@@ -46,6 +47,10 @@ if(coup == 1){
 			break;
 		}	
 	}else{
+		
+		if (!audio_is_playing(sound_footsteps)) {
+			audio_play_sound(sound_footsteps,-1,false);
+		}
 		switch(face){
 		case RIGHT:
 			sprite_index = spr_player_run;
@@ -83,6 +88,9 @@ depth = -bbox_bottom
 
 //coup d'épée
 if(attack_key && coup > 0 && can_attack){
+	//play sound
+	audio_play_sound(sound_slash,5,false);
+	
 	switch(face){
 		
 		case RIGHT:
@@ -157,6 +165,7 @@ if(dash_key && dash_dispo > 0 && can_dash){
 if(shield_key && !overshield){
 	if(!instance_exists(obj_shield)){
 		instance_create_depth(x,y,0,obj_shield);
+		audio_play_sound(sound_shield,6,true);
 	}
 	shield_dispo--;
 	can_dash = false;
@@ -169,9 +178,11 @@ if(shield_key && !overshield){
 	if(shield_dispo == 0){
 		instance_destroy(obj_shield);
 		overshield = true;
+		audio_stop_sound(sound_shield)
 	}
 	
 }else if(!shield_key && !can_dash){
+	audio_stop_sound(sound_shield)
 	instance_destroy(obj_shield);
 	can_dash = true;
 	can_attack = true;

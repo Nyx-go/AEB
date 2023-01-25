@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "Music_Menu",
+  "name": "sound_accept",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -14,10 +14,10 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "Music_Menu.mp3",
-  "duration": 29.44,
+  "soundFile": "sound_accept.wav",
+  "duration": 0.064422,
   "parent": {
-    "name": "music",
-    "path": "folders/Sons/music.yy",
+    "name": "sounds",
+    "path": "folders/Sons/sounds.yy",
   },
 }

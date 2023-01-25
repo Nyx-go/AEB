@@ -69,6 +69,6 @@
   "nineSlice": null,
   "parent": {
     "name": "MenuSystem",
-    "path": "folders/MenuSystem.yy",
+    "path": "folders/MenuRemonteLeTemps/MenuSystem.yy",
   },
 }

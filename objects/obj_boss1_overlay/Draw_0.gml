@@ -7,7 +7,7 @@ if(instance_exists(obj_boss1))
 
 	draw_set_color(c_black);
 	draw_set_font(f_arial_big)
-	draw_text(1366-325,60, "Cupid, le fast")
+	draw_text(1366-325,60, "Cupid, le vif")
 	draw_set_font(f_arial)
 	
 }else{
@@ -15,7 +15,7 @@ if(instance_exists(obj_boss1))
 
 	draw_set_color(c_black);
 	draw_set_font(f_arial_big)
-	draw_text(1366-325,60, "Cupid, le fast")
+	draw_text(1366-325,60, "Cupid, le vif")
 	draw_set_font(f_arial)
 
 }

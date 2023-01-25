@@ -7,7 +7,7 @@
     "path": "sprites/spr_col_block/spr_col_block.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "managed": true,
   "spriteMaskId": null,
   "persistent": true,

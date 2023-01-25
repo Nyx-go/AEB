@@ -9,8 +9,19 @@ op_length = array_length(option);
 
 //move through the menu
 pos += right_key - left_key;
-if pos >= op_length {pos=0};
-if pos < 0 {pos=op_length-1};
+if pos >= global.boss_vaincu {pos=0};
+if pos < 0 {pos=global.boss_vaincu-1};
+
+if(back_key){
+	switch(global.boss_vaincu){
+		case 1:
+			room_goto(salle_boss2)
+			break;
+		case 2:
+			room_goto(salle_boss3)
+			break;
+	}
+}
 
 if accept_key {
 	switch(pos){
@@ -23,6 +34,8 @@ if accept_key {
 
 	}
 }
+
+
 
 
 

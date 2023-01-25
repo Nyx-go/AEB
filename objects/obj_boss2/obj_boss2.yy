@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_boss2",
   "spriteId": {
-    "name": "boss_idle",
-    "path": "sprites/boss_idle/boss_idle.yy",
+    "name": "spr_boss2_idle",
+    "path": "sprites/spr_boss2_idle/spr_boss2_idle.yy",
   },
   "solid": false,
   "visible": true,

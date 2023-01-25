@@ -19,5 +19,5 @@ global.health = global.max_health;
 
 global.damage = 10;
 
-global.boss_stat = [70, 0, 0]
+global.boss_stat = [0, 0, 0]
 global.boss_vaincu = 0;

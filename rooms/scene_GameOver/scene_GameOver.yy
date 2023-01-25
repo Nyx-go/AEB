@@ -53,7 +53,7 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "WinScreen",
-    "path": "folders/WinScreen.yy",
+    "name": "Game Over",
+    "path": "folders/Game Over.yy",
   },
 }

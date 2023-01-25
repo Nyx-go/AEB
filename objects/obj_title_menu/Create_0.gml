@@ -17,7 +17,7 @@ option[1,2] = "Back";
 //sous menu settings
 option[2,0] = "Controls";
 option[2,1] = "Fullscreen";
-option[2,2] = "Sound";
+option[2,2] = "Sound (NI)";
 option[2,3] = "Back";
 
 //sous menu contrôles

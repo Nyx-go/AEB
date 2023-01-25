@@ -10,6 +10,7 @@
     {"id":{"name":"obj_boss2_overlay16","path":"objects/obj_boss2_overlay16/obj_boss2_overlay16.yy",},"order":1,},
     {"id":{"name":"spr_col_block","path":"sprites/spr_col_block/spr_col_block.yy",},"order":9,},
     {"id":{"name":"obj_col_block","path":"objects/obj_col_block/obj_col_block.yy",},"order":0,},
+    {"id":{"name":"scene_gameOver","path":"rooms/scene_gameOver/scene_gameOver.yy",},"order":3,},
     {"id":{"name":"spr_player_idle_back","path":"sprites/spr_player_idle_back/spr_player_idle_back.yy",},"order":2,},
     {"id":{"name":"spr_player_overlay","path":"sprites/spr_player_overlay/spr_player_overlay.yy",},"order":8,},
     {"id":{"name":"spr_background_boss2","path":"sprites/spr_background_boss2/spr_background_boss2.yy",},"order":17,},
@@ -106,11 +107,10 @@
     {"roomId":{"name":"salle_boss1","path":"rooms/salle_boss1/salle_boss1.yy",},},
     {"roomId":{"name":"salle_boss2","path":"rooms/salle_boss2/salle_boss2.yy",},},
     {"roomId":{"name":"salle_boss3","path":"rooms/salle_boss3/salle_boss3.yy",},},
-    {"roomId":{"name":"scene_GameOver","path":"rooms/scene_GameOver/scene_GameOver.yy",},},
     {"roomId":{"name":"scene_win","path":"rooms/scene_win/scene_win.yy",},},
-    {"roomId":{"name":"scene_GameOver","path":"rooms/scene_GameOver/scene_GameOver.yy",},},
     {"roomId":{"name":"remonte_le_temps_menu","path":"rooms/remonte_le_temps_menu/remonte_le_temps_menu.yy",},},
     {"roomId":{"name":"remonte_le_temps_menu","path":"rooms/remonte_le_temps_menu/remonte_le_temps_menu.yy",},},
+    {"roomId":{"name":"scene_gameOver","path":"rooms/scene_gameOver/scene_gameOver.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Chemins d'accès","folderPath":"folders/Chemins d'accès.yy","order":4,},
@@ -139,10 +139,10 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sprites","folderPath":"folders/Sprites.yy","order":1,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"boss","folderPath":"folders/Sprites/boss.yy","order":15,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"boss1","folderPath":"folders/Sprites/boss1.yy","order":19,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"boss2","folderPath":"folders/Sprites/boss2.yy","order":20,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"player","folderPath":"folders/Sprites/player.yy","order":3,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile sets","folderPath":"folders/Tile sets.yy","order":2,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"WinScreen","folderPath":"folders/WinScreen.yy","order":18,},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"boss2","folderPath":"folders/Sprites/boss2.yy","order":20,},
   ],
   "AudioGroups": [
     {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"audiogroup_default","targets":-1,},
@@ -152,6 +152,6 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2022.9.1.51",
+    "IDEVersion": "2022.11.1.56",
   },
 }

@@ -66,22 +66,22 @@ if(coup > 0 && ((-55<obj_player.x-x && obj_player.x-x<55) && (-85<obj_player.y-y
 		
 		switch(face){
 			case RIGHT:
-				instance_create_depth(x+27, y, -9999, obj_coup_boss)
+				instance_create_depth(x+27, y, -9999, obj_coup_boss1)
 				sprite_index = spr_boss_attack;
 				image_xscale = 1;
 				break;
 			case DOWN:
-				instance_create_depth(x, y+32, -9999, obj_coup_boss)
+				instance_create_depth(x, y+32, -9999, obj_coup_boss1)
 				sprite_index = spr_boss_attack_front;
 				image_xscale = 1;
 				break;
 			case LEFT:
-				instance_create_depth(x-27, y, -9999, obj_coup_boss)
+				instance_create_depth(x-27, y, -9999, obj_coup_boss1)
 				sprite_index = spr_boss_attack;
 				image_xscale = -1;
 				break;
 			case UP:
-				instance_create_depth(x, y-30, -9999, obj_coup_boss)
+				instance_create_depth(x, y-30, -9999, obj_coup_boss1)
 				sprite_index = spr_boss_attack_back;
 				image_xscale = 1;
 				break;

@@ -122,6 +122,7 @@ if(attack_key && coup > 0 && can_attack){
 //dash
 if(dash_key && dash_dispo > 0 && can_dash){
 	dash_on = true;
+	audio_play_sound(sound_dash,2,false);
 	switch(face){
 		
 		case RIGHT:

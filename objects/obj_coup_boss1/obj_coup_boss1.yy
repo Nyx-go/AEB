@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_coup_boss",
+  "name": "obj_coup_boss1",
   "spriteId": {
     "name": "spr_attack_baton",
     "path": "sprites/spr_attack_baton/spr_attack_baton.yy",
@@ -30,7 +30,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "boss",
-    "path": "folders/Objets/tt_boss/boss.yy",
+    "name": "boss1",
+    "path": "folders/Objets/tt_boss/boss1.yy",
   },
 }

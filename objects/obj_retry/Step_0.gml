@@ -16,10 +16,12 @@ if(back_key){
 	switch(global.boss_vaincu){
 		case 1:
 			room_goto(salle_boss2)
+			global.health = global.boss_stat[0][1];
 			global.retry = false;
 			break;
 		case 2:
 			room_goto(salle_boss3)
+			global.health = global.boss_stat[1][1];
 			global.retry = false;
 			break;
 	}

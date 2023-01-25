@@ -91,7 +91,7 @@ if(attack_key && coup > 0 && can_attack){
 			image_xscale = 1;
 			break;
 		case DOWN:
-			instance_create_depth(x-2, y, -9999, obj_coup_epee)
+			instance_create_depth(x-2, y+7, -9999, obj_coup_epee)
 			sprite_index = spr_player_attack_front;
 			image_xscale = 1;
 			break;

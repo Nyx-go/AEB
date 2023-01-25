@@ -43,7 +43,7 @@ if(coup == 1){
 	switch(face){
 		case RIGHT:
 			sprite_index = spr_boss2_run;
-			image_xscale = -1;
+			image_xscale = 1;
 			break;
 		case DOWN:
 			sprite_index = spr_boss2_run_front;
@@ -51,7 +51,7 @@ if(coup == 1){
 			break;
 		case LEFT:
 			sprite_index = spr_boss2_run;
-			image_xscale = 1;
+			image_xscale = -1;
 			break;
 		case UP:
 			sprite_index = spr_boss2_run_back;

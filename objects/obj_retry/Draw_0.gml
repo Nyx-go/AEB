@@ -1,3 +1,9 @@
+draw_set_font(f_arial_big)
+draw_set_color(c_black)
+draw_text(500, 150, "'Esc' = niveau suivant")
+draw_set_font(f_arial)
+
+
 for(var i=0; i<global.boss_vaincu; i++){
 	
 	draw_sprite(option[0][i], option[0][i], option_x + (350*i), option_y)
@@ -13,7 +19,7 @@ for(var i=0; i<global.boss_vaincu; i++){
 	
 	draw_set_font(f_arial_big)
 	draw_set_color(c_black)
-	draw_text(option_x + (350*i) + 110, option_y + 175, option[1][i])
+	draw_text(option_x + (350*i) + 105, option_y + 175, option[1][i])
 	draw_set_font(f_arial)
 
 	

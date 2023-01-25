@@ -13,7 +13,7 @@ can_attack = false;
 
 damage = 40;
 
-
+global.boss_stat[2][0] = global.health
 
 
 

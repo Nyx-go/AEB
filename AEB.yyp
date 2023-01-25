@@ -56,6 +56,7 @@
     {"id":{"name":"spr_background_boss2_menu","path":"sprites/spr_background_boss2_menu/spr_background_boss2_menu.yy",},"order":24,},
     {"id":{"name":"Sprite6","path":"sprites/Sprite6/Sprite6.yy",},"order":1,},
     {"id":{"name":"obj_retry","path":"objects/obj_retry/obj_retry.yy",},"order":0,},
+    {"id":{"name":"Music_LVL_1","path":"sounds/Music_LVL_1/Music_LVL_1.yy",},"order":2,},
     {"id":{"name":"obj_shield","path":"objects/obj_shield/obj_shield.yy",},"order":0,},
     {"id":{"name":"sound_footsteps","path":"sounds/sound_footsteps/sound_footsteps.yy",},"order":6,},
     {"id":{"name":"spr_icon_shield","path":"sprites/spr_icon_shield/spr_icon_shield.yy",},"order":10,},

@@ -63,7 +63,9 @@ if accept_key {
 					    }
 					break;
 			//sound
+			case 2: break;
 			//back
+			case 3: menu_level=0;break;
 		}
 		break;
 		
